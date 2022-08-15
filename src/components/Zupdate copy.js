@@ -14,21 +14,6 @@ const UpdateUser = ({setter}) => {
     event.preventDefault();
     await updateU(username, email, password, newUsername, newEmail, newPassword, setter)
   }
-
-      // const ControlledForm = (event) => {
-    //   const [formValue, setformValue] = React.useState({
-    //     username: '',
-    //     password: ''
-    //   });
-    
-    //   // reset input values
-    //   const handleClick = (event) => {
-    //     setformValue({
-    //       username: '',
-    //       password: ''
-    //     })
-    //   };
-
 //------------------------------------------------------------------------------------------------------------
 return (
   <form onSubmit ={updateHandler}>
