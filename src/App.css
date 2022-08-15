@@ -1,19 +1,10 @@
 .App {
-  background-color: lightsteelblue;
+  background-color: rgb(10, 10, 15);
   text-align: center;
-  box-sizing: border-box;
-  border-width: 5px;
-  border-style: double;
-  border-color: indigo;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #010714;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,7 +15,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #dbeef3;
 }
 
 .SUorLI {
@@ -32,28 +23,24 @@
   justify-content: space-around ;
   align-items: center;
   box-sizing: border-box;
-  border-width: 5px;
-  border-style: double;
-  border-color: black;
-  background-color: rgba(37, 24, 0, 0);
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 .SU {
-  box-sizing: border-box;
-  border-width: 5px;
-  border-style: double;
-  border-color: black;
-  background-color: aquamarine;
+  background-color: rgb(100, 100, 100);
+  color: white;
 }
 
 .LI {
-  box-sizing: border-box;
-  border-width: 5px;
-  border-style: double;
-  border-color: black;
-  background-color: lightgreen;
+  background-color: rgb(55, 55, 55);
+  color: white;
 }
 
+.LoggedUser {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: rgb(255, 255, 255);
+}
 
 .controls {
   display: flex;
@@ -61,51 +48,39 @@
   padding-bottom: 25px;
 }
 
-.ctrlbtn {
+.buttontype1 {
   font-size: 150%
 }
 
 .hiddenSections {
-  box-sizing: border-box;
-  border-width: 5px;
-  border-style: double;
-  border-color: black;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 10px;
 }
 
 .dispImages {
-  background-color: aqua;
-  box-sizing: border-box;
-  border-width: 5px;
-  border-style: double;
-  border-color: blue;
+  background-color: rgb(80, 49, 49);
+  color: white;
+  
 }
 
 .dispUsers {
-  background-color: lightyellow;
-  box-sizing: border-box;
-  border-width: 5px;
-  border-style: double;
-  border-color: rgb(85, 0, 0);
+  background-color: rgb(49, 80, 49);
+  color: white;
 }
 
 .dispUpdate {
-  background-color: goldenrod;
-  box-sizing: border-box;
-  border-width: 5px;
-  border-style: double;
-  border-color: orange;
+  background-color: rgb(49, 49, 80);
+  color: white;
 }
 
 .dispDelete {
-  background-color: red;
-  box-sizing: border-box;
-  border-width: 5px;
-  border-style: double;
-  border-color: darkred;
+  background-color: rgb(49, 49, 49);
+  color: white;
 }
 
 img {
-  width:50vw
+  /* width:50vw; */
+  max-width: 100%;
+  max-height: 100%;
 }
