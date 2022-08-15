@@ -10,7 +10,8 @@ export const signUp = async (username, email, password, setter) => {
       })
     });
     const data = await response.json();
-    setter(data.msg.username);
+    console.log(data)
+    // setter(data.msg.username);
   }
 //--------------------------------------    
   catch(error)
@@ -30,6 +31,7 @@ export const login = async (username, password, setter) => {
       })
     });
     const data = await response.json();
+    console.log(data)
     setter(data.user);
   } 
 //--------------------------------------    
@@ -41,7 +43,7 @@ export const login = async (username, password, setter) => {
 export const getAllUsers = async (setList) => {
   try {
     const response = await fetch("http://localhost:5001/user", {
-      // headers: {"Content-Type": "application/json"},
+      headers: {"Content-Type": "application/json"}, // - you will need this line Tommy
       method: "GET",
     });
     const data = await response.json()
@@ -120,11 +122,11 @@ export const updateU = async (username, password, email, newUsername, newEmail, 
   }
   // console.log(params)
   Object.keys(updates).forEach(key => {
-    if (updates[key] === '' || updates[key] === null) {
+    if (updates[key] === '' || updates[key] === undefined || updates[key] === null) {
       delete updates[key];
     }
   });
-  // console.log(updates)
+  console.log(updates)
 //--------------------------------------  
   try {
     console.log("updateU function called")
